@@ -128,7 +128,7 @@
 
     padding: 5vw;
 
-    border: 2px solid #ffc300;
+    border: 2px solid #e8c44b;
 
     text-align: center;
   }
