@@ -31,6 +31,14 @@
     color-scheme: only light;
   }
 
+  :global(p),
+  :global(h1),
+  :global(h2),
+  :global(h3),
+  :global(a) {
+    color: #ffc300;
+  }
+
   #convite {
     padding: 5vw;
     background: radial-gradient(
