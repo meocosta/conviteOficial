@@ -10,7 +10,7 @@
   <h1 id="tt2" class="display">DA RAFAELA</h1>
 </div>
 
-<p>
+<p class="display ">
   SERÁ UMA NOITE INESQUECÍVEL, MARCADA POR SONHOS, ELEGÂNCIA E MUITA EMOÇÃO!
 </p>
 
@@ -48,7 +48,7 @@
     <p class="great gg" style="margin-left:-10vw">Esporte fino</p>
   </div>
 
-  <p>SUA PRESENÇA É MUITO IMPORTANTE PARA MIM!</p>
+  <p class="display">SUA PRESENÇA É MUITO IMPORTANTE PARA MIM!</p>
 
   <a
     target="_blank"
@@ -76,7 +76,9 @@
     </div></a
   >
 
-  <p>CASO TENHA DUVIDAS, VEJA IDEIAS DE PRESENTES</p>
+  <p class="display">
+    CASO TENHA DUVIDAS, VEJA IDEIAS DE PRESENTES
+  </p>
 
   <a href="/presente">
     <div id="presente">
