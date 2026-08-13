@@ -1,16 +1,13 @@
-<div id="intro">
-  <p class="display pp">CONFIRMAR PRESENÇA ATÉ 10/09</p>
-  <p class="display">
-    VOCÊ ESTÁ CONVIDADO PARA CELEBRAR UM MOMENTO MUITO ESPECIAL!
-  </p>
-</div>
+<p class="display pp" style="width: 75vw;">
+  VOCÊ ESTÁ CONVIDADO PARA CELEBRAR UM MOMENTO MUITO ESPECIAL!
+</p>
 
 <div id="titulo">
   <h2 class="great">15 anos</h2>
   <h1 id="tt2" class="display">DA RAFAELA</h1>
 </div>
 
-<p class="display ">
+<p class="display">
   SERÁ UMA NOITE INESQUECÍVEL, MARCADA POR SONHOS, ELEGÂNCIA E MUITA EMOÇÃO!
 </p>
 
@@ -76,9 +73,7 @@
     </div></a
   >
 
-  <p class="display">
-    CASO TENHA DUVIDAS, VEJA IDEIAS DE PRESENTES
-  </p>
+  <p class="display">CASO TENHA DUVIDAS, VEJA IDEIAS DE PRESENTES</p>
 
   <a href="/presente">
     <div id="presente">
@@ -180,12 +175,6 @@
     display: flex;
     flex-direction: column;
     gap: 80px;
-  }
-
-  #intro {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
   }
 
   /*INDIVIDUAIS*/
