@@ -17,11 +17,18 @@
 <style>
   :global(html) {
     color-scheme: only light;
+    background: #001d3d;
   }
 
   :global(body) {
-    padding: 0;
     margin: 0;
+    min-height: 100vh;
+    background: #001d3d;
+    color: #ffc300;
+  }
+
+  :global(*) {
+    color-scheme: only light;
   }
 
   #convite {
