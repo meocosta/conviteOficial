@@ -15,6 +15,10 @@
 </section>
 
 <style>
+  :global(html) {
+    color-scheme: only light;
+  }
+
   :global(body) {
     padding: 0;
     margin: 0;
