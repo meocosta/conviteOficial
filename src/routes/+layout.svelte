@@ -6,6 +6,16 @@
 
 <svelte:head>
   <link rel="icon" href={favicon} />
+
+  <meta
+    name="color-scheme"
+    content="only light"
+  />
+
+  <meta
+    name="theme-color"
+    content="#001d3d"
+  />
 </svelte:head>
 
 <section id="convite">
@@ -15,33 +25,79 @@
 </section>
 
 <style>
+  /* =========================================================
+     PROTEÇÃO CONTRA DARK MODE
+  ========================================================= */
+
   :global(html) {
-    color-scheme: only light;
-    background: #001d3d;
+    color-scheme: only light !important;
+    background: #001d3d !important;
   }
 
   :global(body) {
     margin: 0;
     min-height: 100vh;
-    background: #001d3d;
-    color: #ffc300;
+
+    background: #001d3d !important;
+    color: #ffc300 !important;
+
+    color-scheme: only light !important;
   }
 
-  :global(*) {
-    color-scheme: only light;
+
+  /* =========================================================
+     DARK MODE DO DISPOSITIVO
+  ========================================================= */
+
+  @media (prefers-color-scheme: dark) {
+    :global(html) {
+      background: #001d3d !important;
+      color-scheme: only light !important;
+    }
+
+    :global(body) {
+      background: #001d3d !important;
+      color: #ffc300 !important;
+      color-scheme: only light !important;
+    }
+
+    :global(p),
+    :global(h1),
+    :global(h2),
+    :global(h3),
+    :global(a) {
+      color: #ffc300 !important;
+    }
   }
+
+
+  /* =========================================================
+     CORES
+  ========================================================= */
 
   :global(p),
   :global(h1),
   :global(h2),
-  :global(h3),
-  :global(a) {
+  :global(h3) {
     color: #ffc300;
   }
 
+  :global(a) {
+    color: #ffd60a;
+    text-decoration: none;
+  }
+
+
+  /* =========================================================
+     CONVITE
+  ========================================================= */
+
   #convite {
+    min-height: 100vh;
     padding: 5vw;
-    background: radial-gradient(
+
+    background:
+      radial-gradient(
         circle at 20% 15%,
         rgba(0, 53, 102, 1) 0%,
         rgba(0, 53, 102, 0.45) 30%,
@@ -57,15 +113,23 @@
         rgba(0, 29, 61, 0.4) 0%,
         transparent 70%
       ),
-      #001d3d;
+      #001d3d !important;
   }
 
+
+  /* =========================================================
+     CONTEÚDO
+  ========================================================= */
+
   #convite-intro {
-    border: 2px solid #ffc300;
-    padding: 5vw;
     display: flex;
     flex-direction: column;
-    text-align: center;
     gap: 160px;
+
+    padding: 5vw;
+
+    border: 2px solid #ffc300;
+
+    text-align: center;
   }
 </style>
